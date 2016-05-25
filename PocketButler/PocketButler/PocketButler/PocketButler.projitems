@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>{3C8A6035-0308-411B-A740-D846A112A90E}</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>PocketButler</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Utils\" />
+    <Folder Include="$(MSBuildThisFileDirectory)ViewModel\" />
+    <Folder Include="$(MSBuildThisFileDirectory)ViewModel\Login\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Pages\Main\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Pages\Venue\" />
+    <Folder Include="$(MSBuildThisFileDirectory)View\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Pages\Map\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Pages\Favorite\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Services\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Model\DTO\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Globals\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Model\DTO\Request\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Model\DTO\Result\" />
+    <Folder Include="$(MSBuildThisFileDirectory)LocalDB\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Model\Local\" />
+    <Folder Include="$(MSBuildThisFileDirectory)ViewModel\Payment\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Model\DTO\Facebook\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Controls\CustomImageCell.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controls\CustomMasterDetailPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controls\DILabel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controls\DarkIceImage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\ImageHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\Media\AbstractOptions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\Media\CameraDevice.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\Media\CameraOptions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\Media\IMediaFile.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\Media\IMediaPicker.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\Media\MediaFile.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\Media\MediaPicker.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\Media\VideoOptions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\OptionItem.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\BasePage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\Login\CreateAccountPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\Login\CreatePassCodePage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\Login\ReenterPassCodePage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\Login\SigninPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\Order\MyOrderPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\Settings\AboutUsPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\Settings\SettingsPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\Settings\TermsConditionsPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\User\ProfilePage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Utils\Utils.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)App.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controls\CustomLabel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controls\CustomEntry.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\ViewModelBase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\Login\LoginViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\Login\LoginPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\Login\SplashPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\Main\MainPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\Venue\VenueListPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\Main\MenuPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\Venue\VenueCategoryDetailPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\User\BillingAddressPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\Venue\VenueItemPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\Venue\VenueTypeSliderPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\Venue\VenueCustomizePage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\Map\MapPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\Favorite\FavoritePage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\UserInfo.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\RestaurantInfo.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\InputDialogHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\VenueService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Globals\Globals.Config.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Globals\Globals.AppText.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\LoginServices.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\BaseService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\UserServices.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\DTO\Request\BaseRequest.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\DTO\Result\BaseResult.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\DTO\Result\OrderHistoryResult.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\DTO\Result\PaymentResult.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\DTO\Result\RestaurantCategoryResult.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\DTO\Result\RestaurantDetailResult.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\DTO\Result\RestaurantListResult.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\DTO\Result\RestaurantMenuDetailResult.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\DTO\Result\RestaurantMenuResult.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\DTO\Result\ServiceDetailResult.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\DTO\Result\SimpleResult.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\DTO\Result\TableServiceDetailResult.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\DTO\Result\UserFavouritesResult.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\DTO\Result\UserInfoResult.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\FavouriteService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\DTO\Request\FavouriteRequest.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\PaymentService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\DTO\Request\UserRequest.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\DTO\Request\RestaurantRequest.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\DTO\Request\PaymentRequest.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controls\SliderControl.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\Order\CheckoutOrderPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\Main\SearchResultPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\CustomNavigationPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\Settings\ChangePasswordPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\Login\FacebookLoginPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\Venue\ServiceTablePage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)LocalDB\LocalDBManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Local\PaymentTableItem.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\Payment\PaymentInfoViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\Order\OrderPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\Order\ProcessPaymentPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controls\CustomDatePicker.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\Order\OrderDetailPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\Order\PaymentByTabPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\Order\OpenNewTabPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\Order\PaymentByTokenPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controls\CustomMapView.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controls\CustomPin.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controls\CustomExpandableListView.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\DTO\Result\OrderDetailResult.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controls\CustomPicker.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controls\CustomButton.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controls\CustomSeekBar.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controls\CustomSlidePicker.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IPageLoader.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controls\FacebookLoginButton.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\DTO\Facebook\FacebookProfileData.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\Login\VerifyUserPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Controls\CustomDateTimePicker.cs" />
+  </ItemGroup>
+</Project>

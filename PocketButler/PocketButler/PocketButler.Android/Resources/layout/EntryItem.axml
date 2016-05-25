@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:p1="http://schemas.android.com/apk/res/android"
+    p1:minWidth="25px"
+    p1:minHeight="25px"
+    p1:layout_width="match_parent"
+    p1:layout_height="match_parent"
+    p1:id="@+id/RLElementRoot">
+    <ImageView
+        p1:layout_width="60dp"
+        p1:layout_height="60dp"
+        p1:id="@+id/imgItem"
+        p1:layout_margin="5dp" />
+    <TextView
+        p1:layout_width="match_parent"
+        p1:layout_height="wrap_content"
+        p1:id="@+id/lblItemName"
+        p1:layout_toRightOf="@id/imgItem"
+        p1:layout_marginTop="5dp"
+        p1:layout_marginLeft="5dp"
+        p1:textColor="#FFFFFF"
+        p1:textSize="14dp"
+        p1:layout_marginRight="100dp" />
+    <TextView
+        p1:layout_width="match_parent"
+        p1:layout_height="wrap_content"
+        p1:id="@+id/lblItemPrice"
+        p1:layout_toRightOf="@id/imgItem"
+        p1:layout_below="@id/lblItemName"
+        p1:layout_marginLeft="5dp"
+        p1:layout_marginTop="3dp"
+        p1:textColor="#FFFFFF"
+        p1:textSize="14dp"
+        p1:layout_marginRight="100dp" />
+    <ImageView
+        p1:src="@drawable/directionicon"
+        p1:layout_width="15dp"
+        p1:layout_height="70dp"
+        p1:id="@+id/imgNavigator"
+        p1:layout_alignParentRight="true"
+        p1:layout_marginRight="10dp"
+        p1:visibility="gone" />
+    <Button
+        p1:text="Add + 1"
+        p1:layout_width="wrap_content"
+        p1:layout_height="30dp"
+        p1:id="@+id/btnQuickAdd"
+        p1:textSize="12sp"
+        p1:textColor="#000000"
+        p1:layout_alignParentRight="true"
+        p1:layout_marginRight="10dp"
+        p1:background="@drawable/customroundbutton"
+        p1:layout_marginTop="20dp" />
+    <RelativeLayout
+        p1:minWidth="25px"
+        p1:minHeight="25px"
+        p1:layout_width="match_parent"
+        p1:layout_height="wrap_content"
+        p1:id="@+id/RLQuickAddBar"
+        p1:layout_below="@+id/imgItem"
+        p1:visibility="gone">
+        <ImageView
+            p1:src="@android:drawable/ic_menu_gallery"
+            p1:layout_width="20dp"
+            p1:layout_height="40dp"
+            p1:id="@+id/imgFavourites"
+            p1:layout_marginLeft="30dp" />
+        <TextView
+            p1:text="Quantity 3"
+            p1:layout_width="wrap_content"
+            p1:layout_height="40dp"
+            p1:id="@+id/txtItemCount"
+            p1:layout_toLeftOf="@+id/btnQuickAdd"
+            p1:gravity="center_vertical"
+            p1:layout_marginRight="20dp"
+            p1:textColor="@color/default_title_indicator_footer_color"
+            p1:textSize="14sp"
+            p1:textStyle="italic"
+            p1:layout_alignParentRight="true" />
+    </RelativeLayout>
+</RelativeLayout>

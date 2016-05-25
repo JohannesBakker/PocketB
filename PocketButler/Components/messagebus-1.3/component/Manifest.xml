@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<component format="1" id="messagebus">
+  <name>MessageBus</name>
+  <publisher>DSoft Developments</publisher>
+  <publisher-url>http://www.dsoftonline.com</publisher-url>
+  <src-url>https://github.com/newky2k/MessageBus</src-url>
+  <version>1.3</version>
+  <summary>Cross platform EventBus framework for iOS, Android, Windows Phone and Mac</summary>
+  <screenshots>
+    <img src="screenshots/MessageBus001.png" title="MessageBus001" />
+  </screenshots>
+  <samples>
+    <sample id="MessageBusiOS">
+      <name>iOS Sample</name>
+      <summary>iOS Sample</summary>
+    </sample>
+    <sample id="MessageBusiOS-Classic">
+      <name>iOS Classic Sample</name>
+      <summary>iOS Classic Sample</summary>
+    </sample>
+    <sample id="MessageBoxAndroid">
+      <name>Android Sample</name>
+      <summary>Android Sample</summary>
+    </sample>
+    <sample id="MessageBusWP">
+      <name>Windows Phone Sample</name>
+      <summary>Windows Phone Sample</summary>
+    </sample>
+    <sample id="MessageBusMac">
+      <name>Mac Unified Sample</name>
+      <summary>Mac Unified Sample</summary>
+    </sample>
+  </samples>
+</component>

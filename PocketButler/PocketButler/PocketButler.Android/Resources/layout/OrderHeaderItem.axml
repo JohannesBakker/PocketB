@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:p1="http://schemas.android.com/apk/res/android"
+    p1:minWidth="25px"
+    p1:minHeight="25px"
+    p1:layout_width="match_parent"
+    p1:layout_height="match_parent"
+    p1:id="@+id/RLElementRoot"
+    p1:background="#505050">
+    <TextView
+        p1:layout_width="30dp"
+        p1:layout_height="40dp"
+        p1:id="@+id/lblItemCount"
+        p1:layout_marginTop="5dp"
+        p1:layout_marginLeft="10dp"
+        p1:textColor="#FFFFFF"
+        p1:textSize="14dp"
+        p1:gravity="center" />
+    <TextView
+        p1:layout_width="match_parent"
+        p1:layout_height="40dp"
+        p1:id="@+id/lblItemName"
+        p1:layout_marginTop="5dp"
+        p1:layout_marginLeft="35dp"
+        p1:textColor="#FFFFFF"
+        p1:textSize="14dp"
+        p1:layout_marginRight="120dp"
+        p1:gravity="center_vertical"
+        p1:layout_toEndOf="@+id/lblItemCount"
+        p1:lines="1"
+        p1:ellipsize="end" />
+    <Button
+        p1:text="$12"
+        p1:layout_width="70dp"
+        p1:layout_height="50dp"
+        p1:id="@+id/btnMenuPrice"
+        p1:background="@drawable/shortcut_highlight"
+        p1:textSize="14sp"
+        p1:layout_toStartOf="@+id/lblExpanded"
+        p1:layout_marginRight="45dp"
+        p1:layout_alignParentRight="true" />
+    <TextView
+        p1:layout_width="30dp"
+        p1:layout_height="50dp"
+        p1:id="@+id/lblExpanded"
+        p1:textColor="#B0B0B0"
+        p1:textSize="20dp"
+        p1:layout_marginRight="10dp"
+        p1:gravity="center"
+        p1:layout_alignParentRight="true"
+        p1:text="+" />
+</RelativeLayout>

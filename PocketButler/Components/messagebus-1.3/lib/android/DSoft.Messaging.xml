@@ -1,0 +1,275 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DSoft.Messaging</name>
+    </assembly>
+    <members>
+        <member name="T:DSoft.Messaging.MessageBus">
+            <summary>
+            Message bus.
+            </summary>
+        </member>
+        <member name="P:DSoft.Messaging.MessageBus.Default">
+            <summary>
+            Gets the default message bus
+            </summary>
+            <value>The default.</value>
+        </member>
+        <member name="P:DSoft.Messaging.MessageBus.EventHandlers">
+            <summary>
+            Gets the registered event handlers.
+            </summary>
+            <value>The event handlers.</value>
+        </member>
+        <member name="P:DSoft.Messaging.MessageBus.SyncContext">
+            <summary>
+            Gets or sets the sync context.
+            </summary>
+            <value>The sync context.</value>
+        </member>
+        <member name="M:DSoft.Messaging.MessageBus.Register(DSoft.Messaging.MessageBusEventHandler)">
+            <summary>
+            Registers the specified event handler.
+            </summary>
+            <param name="EventHandler">The event handler.</param>
+        </member>
+        <member name="M:DSoft.Messaging.MessageBus.DeRegister(DSoft.Messaging.MessageBusEventHandler)">
+            <summary>
+            DeRegister the event handler
+            </summary>
+            <param name="EventHandler">The event handler.</param>
+        </member>
+        <member name="M:DSoft.Messaging.MessageBus.Clear(System.String)">
+            <summary>
+            Clear Handlers for the specified event id
+            </summary>
+            <param name="EventID">Event I.</param>
+        </member>
+        <member name="M:DSoft.Messaging.MessageBus.Register``1(System.Action{System.Object,DSoft.Messaging.MessageBusEvent})">
+            <summary>
+            Register for a type of MessageBusEvent
+            </summary>
+            <typeparam name="T">The 1st type parameter.</typeparam>
+        </member>
+        <member name="M:DSoft.Messaging.MessageBus.DeRegister``1(System.Action{System.Object,DSoft.Messaging.MessageBusEvent})">
+            <summary>
+            Deregister the event action for a Generic message bus type
+            </summary>
+            <param name="Action">Action.</param>
+            <typeparam name="T">The 1st type parameter.</typeparam>
+        </member>
+        <member name="M:DSoft.Messaging.MessageBus.Post(DSoft.Messaging.MessageBusEvent)">
+            <summary>
+            Posts the even
+            </summary>
+            <param name="Event">The event object</param>
+        </member>
+        <member name="M:DSoft.Messaging.MessageBus.Post(System.String)">
+            <summary>
+            Posts the event.
+            </summary>
+            <param name="EventId">Event Id</param>
+        </member>
+        <member name="M:DSoft.Messaging.MessageBus.Post(System.String,System.Object)">
+            <summary>
+            Posts the event
+            </summary>
+            <param name="EventId">Event Id</param>
+            <param name="Sender">The Sender</param>
+        </member>
+        <member name="M:DSoft.Messaging.MessageBus.Post(System.String,System.Object,System.Object[])">
+            <summary>
+            Posts the event.
+            </summary>
+            <param name="EventId">Event Id</param>
+            <param name="Sender">The Sender</param>
+            <param name="Data">Data objects to pass through with the event </param>
+        </member>
+        <member name="M:DSoft.Messaging.MessageBus.PostEvent(DSoft.Messaging.MessageBusEvent)">
+            <summary>
+            Post the specified Event to the Default MessageBus
+            </summary>
+            <param name="Event">Event.</param>
+        </member>
+        <member name="M:DSoft.Messaging.MessageBus.PostEvent(System.String)">
+            <summary>
+            Posts the event to the Default MessageBus
+            </summary>
+            <param name="EventId">Event identifier.</param>
+        </member>
+        <member name="M:DSoft.Messaging.MessageBus.PostEvent(System.String,System.Object)">
+            <summary>
+            Post the specified EventId and Sender to the Default MessageBus
+            </summary>
+            <param name="EventId">Event identifier.</param>
+            <param name="Sender">Sender.</param>
+        </member>
+        <member name="M:DSoft.Messaging.MessageBus.PostEvent(System.String,System.Object,System.Object[])">
+            <summary>
+            Post the specified EventId, Sender and Data to the Default MessageBus
+            </summary>
+            <param name="EventId">Event identifier.</param>
+            <param name="Sender">Sender.</param>
+            <param name="Data">Data.</param>
+        </member>
+        <member name="M:DSoft.Messaging.MessageBus.RunOnUiThread(System.Action)">
+            <summary>
+            Execute the action on the UI thread
+            </summary>
+            <param name="Command">Command.</param>
+        </member>
+        <member name="T:DSoft.Messaging.MessageBusEvent">
+            <summary>
+            Message bus event class
+            </summary>
+        </member>
+        <member name="P:DSoft.Messaging.MessageBusEvent.EventId">
+            <summary>
+            Gets or sets the event identifier.
+            </summary>
+            <value>The event identifier.</value>
+        </member>
+        <member name="P:DSoft.Messaging.MessageBusEvent.Sender">
+            <summary>
+            Sender of the event
+            </summary>
+        </member>
+        <member name="P:DSoft.Messaging.MessageBusEvent.Data">
+            <summary>
+            Data to pass with the event
+            </summary>
+        </member>
+        <member name="M:DSoft.Messaging.MessageBusEvent.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:DSoft.Messaging.MessageBusEvent" /> class.
+            </summary>
+        </member>
+        <member name="M:DSoft.Messaging.MessageBusEvent.#ctor(System.Object,System.Object[])">
+            <summary>
+            Initializes a new instance of the <see cref="T:DSoft.Messaging.MessageBusEvent" /> class.
+            </summary>
+            <param name="Sender">Sender.</param>
+            <param name="Data">Data.</param>
+        </member>
+        <member name="T:DSoft.Messaging.CoreMessageBusEvent">
+            <summary>
+            Standard MessageBusEvent class
+            </summary>
+        </member>
+        <member name="P:DSoft.Messaging.CoreMessageBusEvent.EventId">
+            <summary>
+            Gets or sets the event identifier. Will generate a new Guid based Id if not set
+            </summary>
+            <value>The event identifier.</value>
+        </member>
+        <member name="M:DSoft.Messaging.CoreMessageBusEvent.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:DSoft.Messaging.CoreMessageBusEvent" /> class.
+            </summary>
+        </member>
+        <member name="M:DSoft.Messaging.CoreMessageBusEvent.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:DSoft.Messaging.CoreMessageBusEvent" /> class.
+            </summary>
+            <param name="EventID">Event Identifier.</param>
+        </member>
+        <member name="M:DSoft.Messaging.CoreMessageBusEvent.#ctor(System.Object,System.String,System.Object[])">
+            <summary>
+            Initializes a new instance of the <see cref="T:DSoft.Messaging.CoreMessageBusEvent" /> class.
+            </summary>
+            <param name="Sender">Sender.</param>
+            <param name="EventID">Event I.</param>
+            <param name="Data">Data.</param>
+        </member>
+        <member name="T:DSoft.Messaging.MessageBusEventHandler">
+            <summary>
+            Message bus event handler.
+            </summary>
+        </member>
+        <member name="P:DSoft.Messaging.MessageBusEventHandler.EventId">
+            <summary>
+            Event Id
+            </summary>
+        </member>
+        <member name="P:DSoft.Messaging.MessageBusEventHandler.EventAction">
+            <summary>
+            Action to perform on event
+            </summary>
+        </member>
+        <member name="M:DSoft.Messaging.MessageBusEventHandler.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:DSoft.Messaging.MessageBusEventHandler" /> class.
+            </summary>
+        </member>
+        <member name="M:DSoft.Messaging.MessageBusEventHandler.#ctor(System.String,System.Action{System.Object,DSoft.Messaging.MessageBusEvent})">
+            <summary>
+            Initializes a new instance of the <see cref="T:DSoft.Messaging.MessageBusEventHandler" /> class.
+            </summary>
+            <param name="EventId">Event identifier.</param>
+            <param name="Action">Action.</param>
+        </member>
+        <member name="T:DSoft.Messaging.TypedMessageBusEventHandler">
+            <summary>
+            Typed message bus event handler.
+            </summary>
+        </member>
+        <member name="P:DSoft.Messaging.TypedMessageBusEventHandler.EventType">
+            <summary>
+            Gets or sets the type of the event.
+            </summary>
+            <value>The type of the event.</value>
+        </member>
+        <member name="M:DSoft.Messaging.TypedMessageBusEventHandler.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:DSoft.Messaging.TypedMessageBusEventHandler" /> class.
+            </summary>
+        </member>
+        <member name="T:DSoft.Messaging.Collections.MessageBusEventHandlerCollection">
+            <summary>
+            Collection of messagebuseventhandlers
+            </summary>
+        </member>
+        <member name="M:DSoft.Messaging.Collections.MessageBusEventHandlerCollection.HandlersForEvent(System.String)">
+            <summary>
+            Handlers for event.
+            </summary>
+            <param name="EventId">The event identifier.</param>
+            <returns>
+            </returns>
+        </member>
+        <member name="M:DSoft.Messaging.Collections.MessageBusEventHandlerCollection.HandlersForEvent(System.Type)">
+            <summary>
+            Handlerses for event type
+            </summary>
+            <returns>The for event.</returns>
+            <param name="EventType">Event type.</param>
+        </member>
+        <member name="M:DSoft.Messaging.Collections.MessageBusEventHandlerCollection.HandlersForEvent``1">
+            <summary>
+            Returns the event handlers for the specified Generic MessageBusEvent Type
+            </summary>
+            <returns>The for event.</returns>
+            <typeparam name="T">The 1st type parameter.</typeparam>
+        </member>
+        <member name="T:DSoft.Messaging.Extensions.MessageBusExtensions">
+            <summary>
+            MessageBus object extensions
+            </summary>
+        </member>
+        <member name="M:DSoft.Messaging.Extensions.MessageBusExtensions.PostEvent(System.Object,System.String)">
+            <summary>
+            Posts the event.
+            </summary>
+            <param name="Sender">Sender.</param>
+            <param name="EventId">Event Id</param>
+        </member>
+        <member name="M:DSoft.Messaging.Extensions.MessageBusExtensions.PostEvent(System.Object,System.String,System.Object[])">
+            <summary>
+            Posts the event.
+            </summary>
+            <param name="Sender">Sender.</param>
+            <param name="EventId">Event Id</param>
+            <param name="Data">Additonal data</param>
+        </member>
+    </members>
+</doc>

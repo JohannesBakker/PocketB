@@ -1,0 +1,60 @@
+﻿<Properties StartupItem="PocketButler\PocketButler.Android\PocketButler.Android.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" PreferredExecutionTarget="Android.GalaxyS5" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="PocketButler\PocketButler\Globals\Globals.Config.cs">
+    <Files>
+      <File FileName="PocketButler\PocketButler\Pages\Order\OrderPage.cs" Line="130" Column="38" />
+      <File FileName="PocketButler\PocketButler\Pages\Order\CheckoutOrderPage.cs" Line="254" Column="4" />
+      <File FileName="PocketButler\PocketButler\Pages\Order\ProcessPaymentPage.cs" Line="206" Column="13" />
+      <File FileName="PocketButler\PocketButler\Services\PaymentService.cs" Line="390" Column="25" />
+      <File FileName="PocketButler\PocketButler\Model\RestaurantInfo.cs" Line="1" Column="1" />
+      <File FileName="PocketButler\PocketButler\Globals\Globals.Config.cs" Line="21" Column="3" />
+      <File FileName="PocketButler\PocketButler.Android\MainActivity.cs" Line="123" Column="35" />
+      <File FileName="PocketButler\PocketButler\Pages\Login\CreateAccountPage.cs" Line="501" Column="14" />
+      <File FileName="PocketButler\PocketButler\Pages\Login\LoginPage.cs" Line="347" Column="24" />
+      <File FileName="PocketButler\PocketButler\Utils\Utils.cs" Line="181" Column="3" />
+      <File FileName="PocketButler\PocketButler\Pages\Venue\ServiceTablePage.cs" Line="417" Column="4" />
+      <File FileName="PocketButler\PocketButler\Pages\Venue\VenueListPage.cs" Line="205" Column="5" />
+      <File FileName="PocketButler\PocketButler\Pages\Order\OpenNewTabPage.cs" Line="284" Column="46" />
+      <File FileName="PocketButler\PocketButler\Pages\Login\SplashPage.cs" Line="17" Column="24" />
+      <File FileName="PocketButler\PocketButler\Pages\Venue\VenueCustomizePage.cs" Line="566" Column="6" />
+      <File FileName="PocketButler\PocketButler\Model\DTO\Result\RestaurantMenuResult.cs" Line="22" Column="3" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="PocketButler" expanded="True">
+            <Node name="PocketButler" expanded="True">
+              <Node name="Globals" expanded="True">
+                <Node name="Globals.Config.cs" selected="True" />
+              </Node>
+              <Node name="Model" expanded="True">
+                <Node name="DTO" expanded="True">
+                  <Node name="Result" expanded="True" />
+                </Node>
+              </Node>
+              <Node name="Pages" expanded="True">
+                <Node name="Favorite" expanded="True" />
+                <Node name="Login" expanded="True" />
+                <Node name="Order" expanded="True" />
+                <Node name="Venue" expanded="True" />
+              </Node>
+              <Node name="Utils" expanded="True" />
+            </Node>
+            <Node name="PocketButler.Android" expanded="True">
+              <Node name="ComponentReferenceFolder" expanded="True" />
+              <Node name="Packages" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.PocketButler.Android AndroidDesignerPreferredDevice="Nexus 4" AndroidDeviceId-Debug="emulator-5554" />
+</Properties>

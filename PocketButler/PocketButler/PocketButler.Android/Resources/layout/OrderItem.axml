@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:p1="http://schemas.android.com/apk/res/android"
+    p1:minWidth="25px"
+    p1:minHeight="25px"
+    p1:layout_width="match_parent"
+    p1:layout_height="wrap_content"
+    p1:id="@+id/RLElementRoot">
+    <ImageView
+        p1:layout_width="50dp"
+        p1:layout_height="35dp"
+        p1:id="@+id/imgItem"
+        p1:src="@drawable/red_minus"
+        p1:layout_marginLeft="10dp"
+        p1:layout_marginTop="5dp"
+        p1:layout_marginBottom="5dp"
+        p1:layout_marginRight="5dp"
+        p1:padding="5dp"
+        p1:layout_centerVertical="true" />
+    <TextView
+        p1:layout_width="match_parent"
+        p1:layout_height="30dp"
+        p1:id="@+id/lblMenuName"
+        p1:layout_toRightOf="@id/imgItem"
+        p1:layout_marginTop="5dp"
+        p1:layout_marginLeft="5dp"
+        p1:textColor="#FFFFFF"
+        p1:textSize="14dp"
+        p1:layout_marginRight="10dp"
+        p1:layout_toStartOf="@+id/lblItemPrice"
+        p1:layout_toLeftOf="@+id/lblMenuPrice"
+        p1:lines="1"
+        p1:ellipsize="end" />
+    <TextView
+        p1:layout_width="match_parent"
+        p1:layout_height="wrap_content"
+        p1:id="@+id/lblCustomized"
+        p1:layout_toRightOf="@id/imgItem"
+        p1:layout_below="@id/lblMenuName"
+        p1:layout_marginLeft="5dp"
+        p1:textColor="#A0A0A0"
+        p1:textSize="14dp"
+        p1:layout_marginRight="10dp"
+        p1:layout_toStartOf="@+id/lblItemPrice"
+        p1:textStyle="italic"
+        p1:layout_toLeftOf="@+id/lblMenuPrice"
+        p1:lines="1"
+        p1:ellipsize="end" />
+    <TextView
+        p1:layout_width="60dp"
+        p1:layout_height="50dp"
+        p1:id="@+id/lblMenuPrice"
+        p1:layout_marginTop="5dp"
+        p1:layout_marginLeft="5dp"
+        p1:textColor="#FFFFFF"
+        p1:textSize="14dp"
+        p1:layout_marginRight="10dp"
+        p1:layout_alignParentRight="true"
+        p1:gravity="center"
+        p1:text="$4.00" />
+</RelativeLayout>
